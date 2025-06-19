@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Admin Dashboard 2 React - v2.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Metleaf Solutions (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -16,10 +16,10 @@ Coded by www.creative-tim.com
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Dashboard 2 React components
+// Admin Dashboard 2 React components
 import MDBox from "components/MDBox";
 
-// Material Dashboard 2 React example components
+// Admin Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
@@ -34,13 +34,37 @@ import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
 // Dashboard components
 import Projects from "layouts/dashboard/components/Projects";
 import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import MDAlert from "components/MDAlert";
+import Icon from "@mui/material/Icon";
 
 function Dashboard() {
   const { sales, tasks } = reportsLineChartData;
+  const location = useLocation();
+  const [showAlert, setShowAlert] = useState(false);
+useEffect(() => {
+  if (location.state?.showAlert) {
+    setShowAlert(true);
 
+    // Auto-dismiss after 3 seconds
+    const timer = setTimeout(() => setShowAlert(false), 3000);
+
+    return () => clearTimeout(timer);
+  }
+}, [location.state]);
   return (
     <DashboardLayout>
       <DashboardNavbar />
+      {showAlert && (
+  <MDBox mb={2}>
+    <MDAlert color="success" dismissible>
+      <Icon fontSize="small">thumb_up</Icon>&nbsp;
+       successfully logged in!
+    </MDAlert>
+  </MDBox>
+)}
+
       <MDBox py={3}>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={3}>

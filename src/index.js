@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Admin Dashboard 2 React - v2.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Metleaf Solutions (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,7 +18,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "App";
 
-// Material Dashboard 2 React Context Provider
+// Admin Dashboard 2 React Context Provider
 import { MaterialUIControllerProvider } from "context";
 
 const container = document.getElementById("app");

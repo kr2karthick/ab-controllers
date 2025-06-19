@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Admin Dashboard 2 React - v2.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Metleaf Solutions (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,7 +19,7 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
-// Material Dashboard 2 React components
+// Admin Dashboard 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDButton from "components/MDButton";
@@ -28,7 +28,7 @@ import MDButton from "components/MDButton";
 import masterCardLogo from "assets/images/logos/mastercard.png";
 import visaLogo from "assets/images/logos/visa.png";
 
-// Material Dashboard 2 React context
+// Admin Dashboard 2 React context
 import { useMaterialUIController } from "context";
 
 function PaymentMethod() {

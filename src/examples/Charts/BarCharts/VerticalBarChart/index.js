@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Dashboard 2  React - v2.2.0
+* Admin Dashboard 2  React - v2.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Metleaf Solutions (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -34,14 +34,14 @@ import {
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 
-// Material Dashboard 2 React components
+// Admin Dashboard 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
 // VerticalBarChart configurations
 import configs from "examples/Charts/BarCharts/VerticalBarChart/configs";
 
-// Material Dashboard 2 React base styles
+// Admin Dashboard 2 React base styles
 import colors from "assets/theme/base/colors";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);

@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Admin Dashboard 2 React - v2.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Metleaf Solutions (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,14 +19,14 @@ import { useState } from "react";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Dashboard 2 React components
+// Admin Dashboard 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDAlert from "components/MDAlert";
 import MDButton from "components/MDButton";
 import MDSnackbar from "components/MDSnackbar";
 
-// Material Dashboard 2 React example components
+// Admin Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
@@ -60,7 +60,7 @@ function Notifications() {
     <MDSnackbar
       color="success"
       icon="check"
-      title="Material Dashboard"
+      title="Admin Dashboard"
       content="Hello, world! This is a notification message"
       dateTime="11 mins ago"
       open={successSB}
@@ -73,7 +73,7 @@ function Notifications() {
   const renderInfoSB = (
     <MDSnackbar
       icon="notifications"
-      title="Material Dashboard"
+      title="Admin Dashboard"
       content="Hello, world! This is a notification message"
       dateTime="11 mins ago"
       open={infoSB}
@@ -86,7 +86,7 @@ function Notifications() {
     <MDSnackbar
       color="warning"
       icon="star"
-      title="Material Dashboard"
+      title="Admin Dashboard"
       content="Hello, world! This is a notification message"
       dateTime="11 mins ago"
       open={warningSB}
@@ -100,7 +100,7 @@ function Notifications() {
     <MDSnackbar
       color="error"
       icon="warning"
-      title="Material Dashboard"
+      title="Admin Dashboard"
       content="Hello, world! This is a notification message"
       dateTime="11 mins ago"
       open={errorSB}

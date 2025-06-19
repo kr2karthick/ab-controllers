@@ -1,10 +1,10 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Admin Dashboard 2 React - v2.2.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
+* Copyright 2023 Metleaf Solutions (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 /** 
-  All of the routes for the Material Dashboard 2 React are added here,
+  All of the routes for the Admin Dashboard 2 React are added here,
   You can add a new route, customize the routes and delete the routes here.
 
   Once you add a new route on this file it will be visible automatically on
@@ -35,7 +35,7 @@ Coded by www.creative-tim.com
   10. The `component` key is used to store the component of its route.
 */
 
-// Material Dashboard 2 React layouts
+// Admin Dashboard 2 React layouts
 import Dashboard from "layouts/dashboard";
 import Tables from "layouts/tables";
 import Billing from "layouts/billing";
@@ -47,6 +47,9 @@ import SignUp from "layouts/authentication/sign-up";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
+import CustomerMaster from "layouts/customer-master/CustomerMaster";
+import ItemMaster from "layouts/Item-master/ItemMaster";
+import SalesOrder from "layouts/Sales-Order/SalesOrder";
 
 const routes = [
   {
@@ -65,14 +68,32 @@ const routes = [
   //   route: "/tables",
   //   component: <Tables />,
   // },
+
   {
     type: "collapse",
-    name: "Billing",
-    key: "billing",
-    icon: <Icon fontSize="small">receipt_long</Icon>,
-    route: "/billing",
-    component: <Billing />,
+    name: "Customer Master",
+    key: "customer-master",
+    icon: <Icon fontSize="small">people</Icon>,
+    route: "/customer-master",
+    component: <CustomerMaster />,
   },
+   {
+    type: "collapse",
+    name: "Item Master",
+    key: "item-master",
+    icon: <Icon fontSize="small">inventory</Icon>,
+    route: "/item-master",
+    component: <ItemMaster />,
+  },
+  {
+  type: "collapse",
+  name: "Sales Order",
+  key: "sales-order",
+  icon: <Icon fontSize="small">shopping_cart</Icon>,
+  route: "/sales-order",
+  component: <SalesOrder />,
+},
+
   // {
   //   type: "collapse",
   //   name: "RTL",
@@ -81,16 +102,16 @@ const routes = [
   //   route: "/rtl",
   //   component: <RTL />,
   // },
+  // {
+  //   type: "collapse",
+  //   name: "Notifications",
+  //   key: "notifications",
+  //   icon: <Icon fontSize="small">notifications</Icon>,
+  //   route: "/notifications",
+  //   component: <Notifications />,
+  // },
   {
-    type: "collapse",
-    name: "Notifications",
-    key: "notifications",
-    icon: <Icon fontSize="small">notifications</Icon>,
-    route: "/notifications",
-    component: <Notifications />,
-  },
-  {
-    type: "collapse",
+    //type: "collapse",
     name: "Profile",
     key: "profile",
     icon: <Icon fontSize="small">person</Icon>,
